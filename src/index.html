@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>todos</title>
+    <script src="js/index.js" defer></script>
+
+  </head>
+  <body>
+    <h1 class="to-do-list-head">todos</h1>
+    <section class="to-do-list">
+      <div class="to-do-list__inputs">
+        <svg class="to-do-list__svg-arrow" width="13" height="11">
+          <line
+            x1="6"
+            x2="1"
+            y1="10"
+            y2="4"
+            stroke="rgb(171,171,171)"
+            stroke-width="2"
+          />
+          <line
+            x1="6"
+            x2="11"
+            y1="10"
+            y2="4"
+            stroke="rgb(171,171,171)"
+            stroke-width="2"
+          />
+        </svg>
+        <input
+          class="to-do-list__input"
+          type="text"
+          placeholder="What to do today?"
+          value=""
+        />
+      </div>
+      <div class="to-do-list__items"></div>
+      <div class="to-do-list__status">
+        <span class="to-do-list__left">0 items left</span>
+        <span class="to-do-list__all"><button>All</button></span>
+        <span class="to-do-list__active"><button>Active</button></span>
+        <span class="to-do-list__clear"><button>Clear completed</button></span>
+      </div>
+    </section>
+  </body>
+</html>
